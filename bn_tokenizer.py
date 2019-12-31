@@ -64,14 +64,14 @@ def main(text,tokenizer_type):
     # print(final_token)
     if tokenizer_type=='1':
         # word_token = final_token
-        return final_token 
+        return final_token[1:] 
     elif tokenizer_type=='sentence':
         sentence_token = SentenceToken(text)
         return sentence_token
     elif tokenizer_type=='2':
-       return bigram(final_token)
+       return bigram(final_token[1:])
     elif tokenizer_type=='3':
-        return trigram(final_token)
+        return trigram(final_token[1:])
     else:
         print("Please make sure your token type")
         
