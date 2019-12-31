@@ -9,8 +9,8 @@ This tokenizer was trained by BengaliWikipediaArticles dataset using sentencepie
 
 # Tokenizer
  Please run ```bn_tokenizer.py```
-### Input Text
-For Bangla
+
+### For Bangla
 ```
 text = "আমার সোনার বাংলা. আমি ?তোমাই (*ভালোবাসি)। চিরদিন, তোমার # "
 ```
@@ -26,16 +26,18 @@ trigram-
 sentence token-
 ['আমার সোনার বাংলা', 'আমি', 'তোমাই (*ভালোবাসি)', 'চিরদিন', 'তোমার #']
 
-For English
+### For English
 ```
 text="Hello! I am saiful , an artificial initelligence learner"
 ```
-### Output :
 
 ```
 ngram-['Hello', '!', 'I', 'am', 'saiful', ',', 'an', 'artificial', 'initelligence', 'learner']
+
 Bigrame- [('Hello', '!'), ('!', 'I'), ('I', 'am'), ('am', 'saiful'), ('saiful', ','), (',', 'an'), ('an', 'artificial'), ('artificial', 'initelligence'), ('initelligence', 'learner')]
+
 Trigram-[('Hello', '!', 'I'), ('!', 'I', 'am'), ('I', 'am', 'saiful'), ('am', 'saiful', ','), ('saiful', ',', 'an'), (',', 'an', 'artificial'), ('an', 'artificial', 'initelligence')]
+
 Sentence Tokenization-
 ['Hello! I am saiful', 'an artificial initelligence learner']
 ```
